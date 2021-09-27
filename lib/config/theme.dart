@@ -5,19 +5,19 @@ class AppThemes {
   ///
   /// https://tailwindcss.com/docs/customizing-colors
 
-  static const int _primaryColor = 0xFF6366F1;
+  static const int _primaryColor = 0xFF10B981;
   static const MaterialColor primarySwatch =
       MaterialColor(_primaryColor, <int, Color>{
-    50: Color(0xFFECEDFD),
-    100: Color(0xFFD0D1FB),
-    200: Color(0xFFB1B3F8),
-    300: Color(0xFF9294F5),
-    400: Color(0xFF7A7DF3),
+    50: Color(0xFFECFDF5),
+    100: Color(0xFFD1FAE5),
+    200: Color(0xFFA7F3D0),
+    300: Color(0xFF6EE7B7),
+    400: Color(0xFF34D399),
     500: Color(_primaryColor),
-    600: Color(0xFF5B5EEF),
-    700: Color(0xFF5153ED),
-    800: Color(0xFF4749EB),
-    900: Color(0xFF3538E7),
+    600: Color(0xFF059669),
+    700: Color(0xFF047857),
+    800: Color(0xFF065F46),
+    900: Color(0xFF064E3B),
   });
 
   static const int _textColor = 0xFF6B7280;
