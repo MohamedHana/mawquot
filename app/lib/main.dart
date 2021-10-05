@@ -10,7 +10,7 @@ import 'package:hive/hive.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 
-/// Try using const constructors as much as possible!
+/// Try using const constructors as much as possible! testing clickup integration
 
 void main() async {
   /// Initialize packages
