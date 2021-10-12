@@ -21,7 +21,7 @@ List<NavItemObject> navItems = [
   NavItemObject(
     screen: const TodayScreen(),
     navIcon: const Icon(Icons.today),
-    title: 'Today\'s book',
+    title: 'Today',
     label: 'Today',
   ),
   NavItemObject(

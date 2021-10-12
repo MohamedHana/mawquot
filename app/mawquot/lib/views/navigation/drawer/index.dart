@@ -15,7 +15,7 @@ class DrawerNavigator extends StatelessWidget {
         'Mawquot',
         style: TextStyle(
           fontSize: 26,
-          fontWeight: FontWeight.w900,
+          fontWeight: FontWeight.w700,
         ),
       ),
     );
@@ -25,29 +25,29 @@ class DrawerNavigator extends StatelessWidget {
         drawerHeader,
         ListTile(
           title: const Text(
-            'Day Types',
+            'Days',
           ),
-          leading: const Icon(Icons.date_range),
+          leading: const Icon(Icons.auto_awesome_mosaic),
           onTap: () {
             Navigator.pushNamed(context, '/days');
           },
         ),
         ListTile(
           title: const Text(
-            'Chapters',
+            'Books',
           ),
           leading: const Icon(Icons.menu_book),
           onTap: () {
-            Navigator.pushNamed(context, '/chapters');
+            Navigator.pushNamed(context, '/books');
           },
         ),
         ListTile(
           title: const Text(
-            'Lines',
+            'Chapters',
           ),
           leading: const Icon(Icons.reorder),
           onTap: () {
-            Navigator.pushNamed(context, '/lines');
+            Navigator.pushNamed(context, '/chapters');
           },
         ),
         ListTile(

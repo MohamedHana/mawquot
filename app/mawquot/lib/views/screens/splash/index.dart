@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   // Launching the app 
   Future<Widget> launchFuture() async {
     // [TO-DO] Implement the app's launch business logic
-    await Future.delayed(const Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 3));
 
     return Future.value(const HomeScreen());
   }
@@ -30,13 +30,13 @@ class _SplashScreenState extends State<SplashScreen> {
       title: const Text(
         'Mawquot',
         style: TextStyle(
-          fontWeight: FontWeight.w900, 
+          fontWeight: FontWeight.w700, 
           fontSize: 40,
-          color: Colors.blue,
+          color: Colors.white,
         ),
       ),
-      // backgroundColor: Colors.white,
-      // loaderColor: Colors.green,
+      backgroundColor: Colors.green,
+      loaderColor: Colors.white,
     );
   }
 }
