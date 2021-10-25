@@ -1,11 +1,12 @@
 // Packages
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:splashscreen/splashscreen.dart' as splash_screen_package;
 
 // Screens
-import 'package:mawquot/views/screens/home/index.dart';
+import 'package:mawquot/views/screens/onboarding/index.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -15,12 +16,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // Launching the app 
+  // Launching the app
   Future<Widget> launchFuture() async {
     // [TO-DO] Implement the app's launch business logic
     await Future.delayed(const Duration(seconds: 3));
 
-    return Future.value(const HomeScreen());
+    return Future.value(const OnBoardingScreen());
   }
 
   @override
@@ -30,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
       title: const Text(
         'Mawquot',
         style: TextStyle(
-          fontWeight: FontWeight.w700, 
+          fontWeight: FontWeight.w700,
           fontSize: 40,
           color: Colors.white,
         ),
