@@ -10,6 +10,14 @@ import 'package:mawquot/views/screens/books/index.dart';
 import 'package:mawquot/views/screens/chapters/index.dart';
 import 'package:mawquot/views/screens/settings/index.dart';
 
+import 'package:mawquot/views/screens/authentication/forgot_password.dart';
+import 'package:mawquot/views/screens/authentication/login.dart';
+import 'package:mawquot/views/screens/onboarding/index.dart';
+import 'package:mawquot/views/screens/authentication/password_changed.dart';
+import 'package:mawquot/views/screens/authentication/register.dart';
+import 'package:mawquot/views/screens/authentication/reset_password.dart';
+import 'package:mawquot/views/screens/authentication/verification_code.dart';
+
 class AppRouter {
   // Routes mapping
   static const String splash = '/splash';
@@ -21,6 +29,14 @@ class AppRouter {
   static const String chapters = '/chapters';
   static const String settings = '/settings';
 
+  static const String forgotPassword = '/forgot-password';
+  static const String login = '/login';
+  static const String onBoarding = '/on-boarding';
+  static const String passwordChanged = '/password-changed';
+  static const String register = '/register';
+  static const String resetPassword = '/reset-password';
+  static const String verificationCode = '/verification-code';
+
   static final routes = <String, WidgetBuilder>{
     splash: (BuildContext context) => const SplashScreen(),
     home: (BuildContext context) => const HomeScreen(),
@@ -30,5 +46,12 @@ class AppRouter {
     books: (BuildContext context) => const BooksScreen(),
     chapters: (BuildContext context) => const ChaptersScreen(),
     settings: (BuildContext context) => const SettingsScreen(),
+    forgotPassword: (BuildContext context) => const ForgotPasswordScreen(),
+    login: (BuildContext context) => const LoginScreen(),
+    onBoarding: (BuildContext context) => const OnBoardingScreen(),
+    passwordChanged: (BuildContext context) => const PasswordChangedScreen(),
+    register: (BuildContext context) => const RegisterScreen(),
+    resetPassword: (BuildContext context) => const ResetPasswordScreen(),
+    verificationCode: (BuildContext context) => const VerificationcodePage(),
   };
 }
