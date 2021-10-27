@@ -37,13 +37,16 @@ class _BooksScreenState extends State<BooksScreen> {
       appBar: AppBar(
         title: const Text("Books"),
       ),
-      body: ListView.separated(
-        padding: const EdgeInsets.fromLTRB(8, 8, 8, 80),
-        itemCount: items.length,
-        itemBuilder: (BuildContext context, int index) {
-          return ListItem(item: items[index]);
-        },
-        separatorBuilder: (BuildContext context, int index) => const Divider(),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: ListView.separated(
+          padding: const EdgeInsets.fromLTRB(8, 8, 8, 80),
+          itemCount: items.length,
+          itemBuilder: (BuildContext context, int index) {
+            return ListItem(item: items[index]);
+          },
+          separatorBuilder: (BuildContext context, int index) => const Divider(),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
