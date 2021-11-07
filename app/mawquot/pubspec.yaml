@@ -38,6 +38,7 @@ dependencies:
   splashscreen: ^1.3.5
   syncfusion_flutter_sliders: ^19.3.44
   introduction_screen: ^2.1.0
+  hb_check_code: ^0.0.1
 
 dev_dependencies:
   flutter_test:
