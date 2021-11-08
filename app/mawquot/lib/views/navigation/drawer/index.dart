@@ -59,6 +59,15 @@ class DrawerNavigator extends StatelessWidget {
             Navigator.pushNamed(context, '/settings');
           },
         ),
+        ListTile(
+          title: const Text(
+            'Support',
+          ),
+          leading: const Icon(Icons.help),
+          onTap: () {
+            Navigator.pushNamed(context, '/support');
+          },
+        ),
       ],
     );
 
