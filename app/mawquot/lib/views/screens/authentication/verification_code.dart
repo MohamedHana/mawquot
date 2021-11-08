@@ -40,7 +40,7 @@ class _State extends State<VerificationcodePage> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  child: TextField(
+                  child: TextFormField(
                     controller: verificationCodeController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),

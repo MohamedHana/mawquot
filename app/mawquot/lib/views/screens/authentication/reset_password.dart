@@ -40,7 +40,7 @@ class _State extends State<ResetPasswordScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
+                  child: TextFormField(
                     obscureText: true,
                     controller: newPasswordController,
                     decoration: const InputDecoration(
@@ -51,7 +51,7 @@ class _State extends State<ResetPasswordScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
+                  child: TextFormField(
                     obscureText: true,
                     controller: retypePasswordController,
                     decoration: const InputDecoration(

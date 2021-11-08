@@ -33,7 +33,7 @@ class _State extends State<LoginScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(10),
-                  child: TextField(
+                  child: TextFormField(
                     controller: emailController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
@@ -43,7 +43,7 @@ class _State extends State<LoginScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
+                  child: TextFormField(
                     obscureText: true,
                     controller: passwordController,
                     decoration: const InputDecoration(
