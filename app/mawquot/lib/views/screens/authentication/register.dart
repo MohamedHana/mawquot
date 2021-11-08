@@ -30,7 +30,7 @@ class _State extends State<RegisterScreen> {
                             style: TextStyle(fontSize: 22)))),
                 Container(
                   padding: const EdgeInsets.all(10),
-                  child: TextField(
+                  child: TextFormField(
                     controller: userNameController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
@@ -40,7 +40,7 @@ class _State extends State<RegisterScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(10),
-                  child: TextField(
+                  child: TextFormField(
                     controller: emailController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
@@ -50,7 +50,7 @@ class _State extends State<RegisterScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                  child: TextField(
+                  child: TextFormField(
                     obscureText: true,
                     controller: passwordController,
                     decoration: const InputDecoration(

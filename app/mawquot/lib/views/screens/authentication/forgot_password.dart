@@ -39,7 +39,7 @@ class _State extends State<ForgotPasswordScreen> {
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  child: TextField(
+                  child: TextFormField(
                     controller: emailController,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
