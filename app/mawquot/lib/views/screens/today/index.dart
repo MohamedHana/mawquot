@@ -1,6 +1,13 @@
-
+// Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
+// Navigation
+import 'package:mawquot/views/navigation/drawer/index.dart';
+
+// Screen components
+import 'package:mawquot/views/screens/today/components/top_bar.dart';
+import 'package:mawquot/views/screens/today/components/body.dart';
+import 'package:mawquot/views/screens/today/components/bottom_bar.dart';
 
 class TodayScreen extends StatefulWidget {
   const TodayScreen({Key? key}) : super(key: key);
@@ -18,11 +25,10 @@ class _TodayScreenState extends State<TodayScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text(
-          'Today screen',
-        ),
-      ),
+      appBar: TopBar(),
+      body: Body(),
+      bottomNavigationBar: BottomBar(),
+      drawer: DrawerNavigator(),
     );
   }
 }

@@ -106,7 +106,7 @@ class DarkTheme {
       ),
       headline6: TextStyle(
         color: Color(  0xffffffff ),
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.15,
         fontStyle: FontStyle.normal,
@@ -273,14 +273,14 @@ class DarkTheme {
         fontStyle: FontStyle.normal,
       ),
       errorStyle: TextStyle(
-        color: Color(  0xffffffff ),
+        color: Color(  0xffd32f2f ),
         fontSize: null,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       errorMaxLines: null,
       isDense: false,
-      contentPadding: EdgeInsets.only(top:12,bottom:12,left:0, right:0),
+      contentPadding: EdgeInsets.only(top:12, bottom:12, left:10, right:10),
       isCollapsed : false,
       prefixStyle: TextStyle(
         color: Color(  0xffffffff ),
@@ -302,27 +302,27 @@ class DarkTheme {
       ),
       filled: false,
       fillColor: Color(  0x00000000 ), floatingLabelBehavior: FloatingLabelBehavior.auto,
-      errorBorder: UnderlineInputBorder(
+      errorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
-      focusedBorder: UnderlineInputBorder(
+      focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
-      focusedErrorBorder: UnderlineInputBorder(
+      focusedErrorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
-      disabledBorder: UnderlineInputBorder(
+      disabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
-      enabledBorder: UnderlineInputBorder(
+      enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
-      border: UnderlineInputBorder(
+      border: OutlineInputBorder(
         borderSide: BorderSide(color: Color(  0xff000000 ), width: 1, style: BorderStyle.solid, ),
         borderRadius: BorderRadius.all(Radius.circular(4.0)),
       ),
