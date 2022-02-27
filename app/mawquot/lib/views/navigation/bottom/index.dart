@@ -6,8 +6,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:mawquot/views/screens/today/index.dart';
 import 'package:mawquot/views/screens/reports/index.dart';
 
-// App widgets
+// Navigation
 import 'package:mawquot/views/navigation/drawer/index.dart';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class NavItemObject {
   Widget screen;
@@ -21,7 +40,7 @@ List<NavItemObject> navItems = [
   NavItemObject(
     screen: const TodayScreen(),
     navIcon: const Icon(Icons.today),
-    title: 'Today',
+    title: 'Thursday',
     label: 'Today',
   ),
   NavItemObject(
@@ -32,6 +51,21 @@ List<NavItemObject> navItems = [
   ),
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class BottomNavigator extends StatefulWidget {
   const BottomNavigator({Key? key}) : super(key: key);
 
@@ -41,30 +75,93 @@ class BottomNavigator extends StatefulWidget {
 
 class _BottomNavigatorState extends State<BottomNavigator> {
   // Initial screen index for bottom navigator
-  int _screenIndex = 0;
+  final int _screenIndex = 0;
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style = TextButton.styleFrom(
+      primary: Theme.of(context).colorScheme.onPrimary
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
           navItems[_screenIndex].title,
         ),
+        actions: <Widget>[
+          TextButton(
+            style: style,
+            onPressed: () {},
+            child: const Text('23-10-2021'),
+          ),
+          TextButton(
+            style: style,
+            onPressed: () {},
+            child: const Text('20-08-1443'),
+          ),
+        ],
       ),
       body: navItems[_screenIndex].screen,
-      bottomNavigationBar: BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      items: navItems
-        .map((navItem) => BottomNavigationBarItem(
-            icon: navItem.navIcon,
-            label: navItem.label,
-          ))
-        .toList(),
-      currentIndex: _screenIndex,
-      onTap: (i) => setState(() {
-        _screenIndex = i;
-      }),
-    ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            TextButton(
+              child: Row(
+                children: const [
+                  Icon(Icons.add),
+                  Text('Chapter'),
+                ],
+              ),
+              onPressed: () { 
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const AddChapterDialog(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              },
+            ),
+            const Spacer(),
+            IconButton(
+              icon: const Icon(Icons.search), 
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const SearchDialog(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              }
+            ),
+            IconButton(
+              icon: const Icon(Icons.low_priority), 
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const HistoryDialog(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              }
+            ),
+            IconButton(
+              icon: const Icon(Icons.history), 
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) => const HistoryDialog(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              }
+            ),
+          ],
+        ),
+      ),
       drawer: const DrawerNavigator(),
     );
   }
@@ -73,3 +170,126 @@ class _BottomNavigatorState extends State<BottomNavigator> {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class AddBookDialog extends StatelessWidget {
+  const AddBookDialog({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Add books'),
+      ),
+      body: const Center(
+        child: Text('Add books dialog!'),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+class AddChapterDialog extends StatelessWidget {
+  const AddChapterDialog({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Add chapters'),
+      ),
+      body: const Center(
+        child: Text('Add chapters dialog!'),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+class SearchDialog extends StatelessWidget {
+  const SearchDialog({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Search'),
+      ),
+      body: const Center(
+        child: Text('Search today'),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+class HistoryDialog extends StatelessWidget {
+  const HistoryDialog({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('History'),
+      ),
+      body: const Center(
+        child: Text('Today\'s history'),
+      ),
+    );
+  }
+}
+
+
+
+class SortDialog extends StatelessWidget {
+  const SortDialog({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Sort'),
+      ),
+      body: const Center(
+        child: Text('Today\'s Sort'),
+      ),
+    );
+  }
+}
