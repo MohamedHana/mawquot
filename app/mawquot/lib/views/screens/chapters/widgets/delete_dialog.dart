@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 class DeleteDialog extends StatefulWidget {
   const DeleteDialog({Key? key}) : super(key: key);

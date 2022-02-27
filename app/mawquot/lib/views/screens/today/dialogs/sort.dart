@@ -87,7 +87,7 @@ class _ChaptersListState extends State<ChaptersList> {
         return Material(
           elevation: elevation,
           color: colorScheme.primary,
-          shadowColor: colorScheme.primaryVariant,
+          shadowColor: colorScheme.primaryContainer,
           child: child,
           borderRadius: BorderRadius.circular(5),
         );

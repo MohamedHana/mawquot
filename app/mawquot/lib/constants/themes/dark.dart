@@ -5,7 +5,7 @@ class DarkTheme {
   static final ThemeData configs = ThemeData(
     brightness: Brightness.dark,
     primaryColor: const Color(  0xff212121 ),
-    primaryColorBrightness: Brightness.light,
+    // primaryColorBrightness: Brightness.light,
     primaryColorLight: const Color(  0xff9e9e9e ),
     primaryColorDark: const Color(  0xff000000 ),
     canvasColor: const Color(  0xff303030 ),
@@ -56,9 +56,9 @@ class DarkTheme {
       hoverColor: Color(  0x0affffff ),
       colorScheme: ColorScheme(
         primary: Color(  0xff4caf50 ),
-        primaryVariant: Color(  0xff000000 ),
+        // primaryVariant: Color(  0xff000000 ),
         secondary: Color(  0xff4caf50 ),
-        secondaryVariant: Color(  0xff2e6b31 ),
+        // secondaryVariant: Color(  0xff2e6b31 ),
         surface: Color(  0xff424242 ),
         background: Color(  0xff616161 ),
         error: Color(  0xffd32f2f ),

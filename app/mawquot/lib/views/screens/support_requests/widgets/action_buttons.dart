@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 // Widgets
 import 'package:mawquot/views/screens/support_requests/widgets/delete_dialog.dart';

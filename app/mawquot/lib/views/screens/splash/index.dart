@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:splashscreen/splashscreen.dart' as splash_screen_package;

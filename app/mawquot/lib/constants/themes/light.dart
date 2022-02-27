@@ -4,7 +4,7 @@ class LightTheme {
   static final ThemeData configs = ThemeData(
     brightness: Brightness.light,
     primaryColor: const Color( 0xff4caf50 ),
-    primaryColorBrightness: Brightness.dark,
+    // primaryColorBrightness: Brightness.dark,
     primaryColorLight: const Color( 0xffc8e6c9 ),
     primaryColorDark: const Color( 0xff388e3c ),
     canvasColor: const Color( 0xfffafafa ),
@@ -42,9 +42,9 @@ class LightTheme {
       hoverColor: Color( 0x0a000000 ),
       colorScheme: ColorScheme(
         primary: Color( 0xff4caf50 ),
-        primaryVariant: Color( 0xff388e3c ),
+        // primaryVariant: Color( 0xff388e3c ),
         secondary: Color( 0xff4caf50 ),
-        secondaryVariant: Color( 0xff388e3c ),
+        // secondaryVariant: Color( 0xff388e3c ),
         surface: Color( 0xffffffff ),
         background: Color( 0xffa5d6a7 ),
         error: Color( 0xffd32f2f ),

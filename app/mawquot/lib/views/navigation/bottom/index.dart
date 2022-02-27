@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 // Screens
 import 'package:mawquot/views/screens/today/index.dart';

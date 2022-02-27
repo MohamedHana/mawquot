@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 class DrawerNavigator extends StatelessWidget {
   const DrawerNavigator({key}) : super(key: key);
