@@ -33,12 +33,14 @@ class _State extends State<OnBoardingScreen> {
         next: const Text('Next'),
         done: const Text("Done", style: TextStyle(fontWeight: FontWeight.w600)),
         dotsDecorator: DotsDecorator(
-            activeColor: Theme.of(context).primaryColor,
-            size: const Size.square(10.0),
-            activeSize: const Size(20.0, 10.0),
-            spacing: const EdgeInsets.symmetric(horizontal: 3.0),
-            activeShape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(25.0))),
+          activeColor: Theme.of(context).primaryColor,
+          size: const Size.square(10.0),
+          activeSize: const Size(20.0, 10.0),
+          spacing: const EdgeInsets.symmetric(horizontal: 3.0),
+          activeShape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(25.0)
+          )
+        ),
       ),
     ));
   }

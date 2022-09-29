@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart' as splash_screen_package;
 
 // Screens
-import 'package:mawquot/views/screens/onboarding/index.dart';
-// import 'package:mawquot/views/screens/today/index.dart';
+// import 'package:mawquot/views/screens/onboarding/index.dart';
+import 'package:mawquot/views/screens/today/index.dart';
 // import 'package:mawquot/views/screens/home/index.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // [TO-DO] Implement the app's launch business logic
     await Future.delayed(const Duration(seconds: 1));
 
-    return Future.value(const OnBoardingScreen());
+    return Future.value(const TodayScreen());
   }
 
   @override
